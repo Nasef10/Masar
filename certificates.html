@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>مسار المتحده للمقاولات</title>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- nav-bar  -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-white shadow-lg"
+      id="nav-scrollspy"
+    >
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="images/logo.png" alt="logo-image" draggable="false" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html">الرئيسة</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="About.html">نبذة عنا</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="projects.html">المشاريع</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link active" href="#">الشهادات</a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a class="nav-link" href="contact.html">التواصل</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand d-none d-lg-block" href="#">
+          <img src="images/logo.png" alt="logo-image" draggable="false" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- main  -->
+
+    <main>
+      <div data-aos="fade-up">
+        
+        <section class="certificates">
+          <div class="head py-4 contact-head">
+            <h2>شهادات الجودة</h2>
+            <p class="text-dark-50">
+              نفتخر نحن
+              <b class="fs-5 head-bold"> مسار المتحده للمقاولات</b> بشهادات
+              الجودة التي حصلنا عليها من مختلف المشاريع الناجحة في مجال
+              المقاولات
+            </p>
+            <div class="line-h2"></div>
+          </div>
+          <div class="container py-5">
+            <div class="row">
+              <!-- بطاقة شهادة 1 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/سبت العلايا.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع سبت العلايا"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal1"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة بيشة </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          ازدواج طريق بيشة سبت العلايا
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> بيشه </span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/سبت العلايا.jpg"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal1"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal1"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel1">
+                        شهادة أنجاز مشروع سبت العلايا
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/سبت العلايا.jpg"
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- بطاقة شهادة 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/عشيرة.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع عشيرة"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal2"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة الطائف </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          تنفيذ طريق ازدواج المحاني مرحلة اولي
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> عشيرة</span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/عشيرة.jpg"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal2"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal2"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel2"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel2">
+                        شهادة أنجاز مشروع عشيرة
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage2"
+                          src="images/عشيرة.jpg"
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- شهادة 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/رنية.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع رنية"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal3"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> مكة المكرمة </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          ازدواج طريق الخرمة-رنية-بيشة
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> الخرمة</span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/رنية.jpg"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal3"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal3"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel3"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel2">
+                        شهادة أنجاز مشروع رنية
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/رنية.jpg"
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- شهادة 4 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/شهادة إنجاز مشروع ربط محافظة القري بالعقيق.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع ربط محافظة القري بالعقيق"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal4"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة الباحة </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          ربط محافظة القري بالعقيق
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50">
+                          عبارات صندوقية وانبوبيه وجدران استنادية
+                        </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> الباحه</span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/شهادة إنجاز مشروع ربط محافظة القري بالعقيق.jpg"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal4"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal4"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel4"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel4">
+                        شهادة انجاز مشروع ربط محافظة القري بالعقيق
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/شهادة إنجاز مشروع ربط محافظة القري بالعقيق.jpg"
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- شهادة 5 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/شهادة إنجاز مشروع الرين.jpg "
+                    class="card-img-top"
+                    alt="شهادة مشروع بيشة"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal8"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة الرياض </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          ازدواج طريق الرياض-الرين-بيشة (مرحله 10).
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري . </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> الرين </span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/شهادة إنجاز مشروع الرين.jpg "
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal8"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal8"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel8"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel8">
+                        شهادة مشروع الرين
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/شهادة إنجاز مشروع الرين.jpg "
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- شهادة 6 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/شهادة إنجاز مشروع بير عسكر.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع بيشة"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal6"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> عسير </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          تنفيذ الطرق الثانويه بمنطقة نجران ( مرحله خامسة)
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> عبارات </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> بير عسكر </span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/شهادة إنجاز مشروع بير عسكر.jpg "
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal6"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal6"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel6"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel6">
+                        شهادة مشروع بير عسكر
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/شهادة إنجاز مشروع بير عسكر.jpg "
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- شهادة 7 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/شهادة إنجاز مشروع السيل الكبير.jpg "
+                    class="card-img-top"
+                    alt="شهادة مشروع بيشة"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal7"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة الطائف </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          توسعة طريق الطائف /السيل الكبير وربط السيل الكبير
+                          بالطائف/الرياض السريع مرحله اولي
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري . </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> السيل الكبير</span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/شهادة إنجاز مشروع السيل الكبير.jpg  "
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal7"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal7"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel7"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel7">
+                        شهادة مشروع السيل الكبير
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/شهادة إنجاز مشروع السيل الكبير.jpg "
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- شهادة 8 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <img
+                    src="images/شهادة إنجاز مشروع بيشة.jpg"
+                    class="card-img-top"
+                    alt="شهادة مشروع بيشة"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal5"
+                  />
+                  <div class="card-body">
+                    <div class="icon-card text-end">
+                      <h6>
+                        جهة المشروع :
+                        <span class="h6 text-black-50"> منطقة بيشة </span>
+                      </h6>
+                      <h6>
+                        اسم المشروع :
+                        <span class="h6 text-black-50">
+                          ازدواج طريق بيشة سبت العلايا
+                        </span>
+                      </h6>
+                      <h6>
+                        وصف المشروع :
+                        <span class="h6 text-black-50"> كباري </span>
+                      </h6>
+                      <h6>
+                        موقع المشروع :
+                        <span class="h6 text-black-50"> بيشه </span>
+                      </h6>
+                    </div>
+                    <div class="link text-start">
+                      <a
+                        href="images/شهادة إنجاز مشروع بيشة.jpg"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#certificateModal5"
+                      >
+                        عرض الشهادة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!-- Modal for showing certificate details -->
+              <div
+                class="modal fade"
+                id="certificateModal5"
+                tabindex="-1"
+                aria-labelledby="certificateModalLabel5"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel5">
+                        شهادة أنجاز مشروع بيشة
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Image to enlarge -->
+                      <div class="text-center">
+                        <img
+                          id="certificateImage"
+                          src="images/شهادة إنجاز مشروع بيشة.jpg"
+                          alt="Certificate Image"
+                          class="img-fluid"
+                          style="max-height: 500px"
+                          onclick="toggleImageSize()"
+                        />
+                      </div>
+                      <h4 id="certificateTitle"></h4>
+                      <p id="certificateDescription"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        إغلاق الصورة
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-4 col-sm-4 shadow-sm rounded-4 bg-info-subtle me-auto ">
+              <div class="presidents bg-white text-center rounded-3 mb-3 p-3">
+                <h1 class="h4 text-black">الرئيس والمدير التنفيذي للشركة</h1>
+                <h5 class="text-black-50">م.عاطف حسن مسعود</h5>
+                <h5 class="text-black-50">م.حيدر علي محمد</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div data-aos="fade-up">
+        <footer class="text-white-50 mt-5">
+          <div class="container">
+            <div class="row gy-3">
+              <div class="col-lg-4 mt-5">
+                <h4 class="text-black text-center pb-3">
+                  البريد الإلكتروني الخاص بك
+                </h4>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control p-2"
+                  placeholder="أدخل بريدك الالكتروني هنا"
+                />
+
+                <div class="button mt-4 d-flex justify-content-end">
+                  <button class="border-0 rounded-pill px-5 py-2">
+                    إرسال الطلب
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-5">
+                <h4 class="text-center text-black pb-3">خدمات</h4>
+                <p class="text-center mb-4">
+                  نقدم خدمات إنشاءات عامة للمباني والطرق.
+                </p>
+                <div class="social text-center">
+                  <a
+                    href="https://www.facebook.com/share/1AVTvYcyzG/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook p-3 fa-2x"> </i>
+                  </a>
+                  <a href="https://www.instagram.com/masar.uc/" target="_blank">
+                    <i class="fa-brands fa-instagram ps-3 fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="contact mt-5 d-flex justify-content-center flex-column align-items-center"
+                >
+                  <h4 class="text-black pb-3">التواصل</h4>
+                  <div class="row text-center">
+                    <div class="col-lg-6">
+                      <div class="item1 d-flex justify-content-center">
+                        <i class="fa-solid fa-phone mt-1 ms-2"></i>
+                        <p class=" ">0594933311</p>
+                      </div>
+                      <div class="item1 d-flex justify-content-center">
+                        <i class="fa-solid fa-phone mt-1 ms-2"></i>
+                        <p class=" ">0551043922</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="item2 d-flex ms-4 justify-content-center">
+                        <i class="fa-solid fa-envelope mt-1 ms-2"></i>
+                        <p class="ms-2">info@masaruc.com</p>
+                      </div>
+                      <div class="item1 d-flex justify-content-center">
+                        <i class="fa-solid fa-location-dot ms-2"></i>
+                        <p class=" ">مكه المكرمه-الجموم-مبني مصرف الراجحي</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="d-flex justify-content-center end mt-3">
+                جميع الحقوق محفوظة لشركه المسار المتحده للمقاولات &copy; 2024.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="Js/index.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
