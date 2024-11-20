@@ -89,8 +89,8 @@ const buttons = document.querySelectorAll('button');
 // إضافة حدث النقر (click) لكل زر
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    button.style.backgroundColor = '#28a745'; // تغيير لون الزر عند النقر
-    button.style.color = '#fff';
+    // button.style.backgroundColor = '#28a745'; // تغيير لون الزر عند النقر
+    // button.style.color = '#fff';
     setTimeout(() => {
       button.style.backgroundColor = ''; // إعادة اللون الافتراضي بعد ثانية
       button.style.color = '';
@@ -142,6 +142,50 @@ locationIcons.forEach((icon) => {
 });
 
 
+
+
+// ---------------------------------form---------------------------
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // وقف السلوك الافتراضي
+
+    // جلب القيم من الحقول
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const comment = document.getElementById("comment").value.trim();
+
+    // التحقق من المدخلات
+    if (name === "") {
+      alert("الرجاء إدخال اسمك");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      alert("الرجاء إدخال بريد إلكتروني صحيح");
+      return;
+    }
+
+    if (comment === "") {
+      alert("الرجاء إدخال تعليقك");
+      return;
+    }
+
+    // إذا كانت البيانات صحيحة
+    alert("تم إرسال الطلب بنجاح!");
+    form.reset(); // إعادة تعيين الحقول
+  });
+
+  // دالة للتحقق من صحة البريد الإلكتروني
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+});
 
 
 

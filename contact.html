@@ -125,43 +125,46 @@
               </div>
             </div>
 
-            <div class="row gy-4 mt-5">
-              <div class="col-lg-6 col-sm-12">
-                <input
-                  type="text"
-                  class="form-control p-2"
-                  id="exampleInput1"
-                  aria-describedby="emailHelp "
-                  placeholder="ادخل اسمك هنا "
-                />
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                <input
-                  type="email"
-                  class="form-control p-2"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="ادخل بريدك هنا "
-                />
-              </div>
-
-              <div class="col-lg-12">
-                <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Coment"
-                    id="floatingTextarea2"
-                    style="height: 100px"
-                  ></textarea>
-                  <label for="floatingTextarea2">اكتب تعليقك هنا</label>
+            <form id="contactForm">
+              <div class="row gy-4 mt-5">
+                <div class="col-lg-6 col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control p-2"
+                    id="name"
+                    placeholder="ادخل اسمك هنا"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                  <input
+                    type="email"
+                    class="form-control p-2"
+                    id="email"
+                    placeholder="ادخل بريدك هنا"
+                    required
+                  />
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="اكتب تعليقك هنا"
+                      id="comment"
+                      style="height: 100px"
+                      required
+                    ></textarea>
+                    <label for="comment">اكتب تعليقك هنا</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="d-grid gap-2 d-md-block buttons mt-3">
-              <button class="btn btn-1 px-5" type="button" href="#">
-                ارسال الطلب
-              </button>
-            </div>
+              <div class="d-grid gap-2 d-md-block buttons mt-3">
+                <button class="btn btn-1 px-5" type="submit">
+                  ارسال الطلب
+                </button>
+              </div>
+            </form>
+            
           </div>
         </div>
       </div>

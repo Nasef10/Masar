@@ -1,13 +1,3 @@
-/* @font-face {
-  font-family: "Cairo", sans-serif;
-  src: url(../fonts/cairo/Cairo-VariableFont_slnt\wght.ttf);
-}
-@font-face {
-  font-family: "Baloo Bhaijaan 2", sans-serif;
-  src: url(../fonts/Baloo-Bhaijaan-2/BalooBhaijaan2-VariableFont_wght.ttf);
-} */
-
-
 
 
 :root {
@@ -624,3 +614,17 @@ footer {
   color: #000, var(--bs-link-opacity, 1);
   text-decoration: underline;
 }
+
+
+.icon-fixed{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  
+}
+
+.icon-fixed i{
+  color: rgb(24, 231, 24);
+}
+
