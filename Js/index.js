@@ -113,9 +113,9 @@ textarea.addEventListener('input', () => {
 
 document.querySelector('.phone-link').addEventListener('click', (e) => {
   e.preventDefault(); // منع السلوك الافتراضي مؤقتًا
-  const userConfirmed = confirm('هل تريد الاتصال بهذا الرقم 960594933311+ ؟');
+  const userConfirmed = confirm('هل تريد الاتصال بهذا الرقم 966594933311+ ؟');
   if (userConfirmed) {
-    window.location.href = 'tel:+9660594933311'; // فتح تطبيق الاتصال
+    window.location.href = 'tel:+966594933311'; // فتح تطبيق الاتصال
   }
 });
 
